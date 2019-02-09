@@ -160,24 +160,24 @@ VOCABULARY = {
 ORGANISATION_NAME = "Randebandi"
 ORGANISATION_NAME_CONFIG = {"type" : "",
     "gender" : ""}
-ORGANISATION_LONG_NAME = "Randebandi"
-ORGANISATION_ADDRESS = {"name":"Randebandi", 
+ORGANISATION_LONG_NAME = "Gemüsebaukooperative Randebandi"
+ORGANISATION_ADDRESS = {"name":"Gemüsebaukooperative Randebandi", 
             "street" : "Nisihof",
-            "number" : "1",
+            "number" : "",
             "zip" : "6208",
             "city" : "Oberkirch",
-            "extra" : "-"}
+            "extra" : ""}
 ORGANISATION_PHONE =''
-ORGANISATION_BANK_CONNECTION = {"PC" : "-",
-            "IBAN" : "-",
-            "BIC" : "-",
-            "NAME" : "-",
-            "ESR" : ""}
+ORGANISATION_BANK_CONNECTION = {"PC" : "89-312727-9",
+            "IBAN" : "CH15 0900 0000 8931 2727 9",
+            "BIC" : "9000",
+            "NAME" : "PostFinance AG",
+            "ESR" : "89-312727-9"}
 INFO_EMAIL = "info@randebandi.ch"
-SERVER_URL = "www.myrandebandi.org"
+SERVER_URL = "www.randebandi.ch"
 ADMINPORTAL_NAME = "Meine Randebandi"
 ADMINPORTAL_SERVER_URL = "meine.randebandi.ch"
-BUSINESS_REGULATIONS = ""
+BUSINESS_REGULATIONS = "https://www.randebandi.ch/wp-content/uploads/2018/03/180304_Randebandi_Betriebsreglement.pdf"
 BYLAWS = "https://www.randebandi.ch/wp-content/uploads/2019/01/181218_Randebandi_Statuten.pdf"
 MAIL_TEMPLATE = "mails/email.html"
 STYLE_SHEET = "/static/css/personal.css"
@@ -197,7 +197,7 @@ DEPOT_LIST_GENERATION_DAYS = [1,2,3,4,5,6,7]
 BILLING = False
 BUSINESS_YEAR_START = {"day":1, "month":1}
 BUSINESS_YEAR_CANCELATION_MONTH = 10
-MEMBERSHIP_END_MONTH = 6
+MEMBERSHIP_END_MONTH = 1
 IMAGES = {'status_100': '/static/img/status_100.png',
             'status_75': '/static/img/status_75.png',
             'status_50': '/static/img/status_50.png',
