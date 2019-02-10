@@ -181,7 +181,6 @@ BUSINESS_REGULATIONS = "https://www.randebandi.ch/wp-content/uploads/2018/03/180
 BYLAWS = "https://www.randebandi.ch/wp-content/uploads/2019/01/181218_Randebandi_Statuten.pdf"
 MAIL_TEMPLATE = "mails/email.html"
 STYLE_SHEET = "/static/css/personal.css"
-BOOTSTRAP = ""
 FAVICON = "/static/img/favicono.ico"
 FAQ_DOC = ""
 EXTRA_SUB_INFO = ""
