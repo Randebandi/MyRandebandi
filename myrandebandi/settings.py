@@ -158,7 +158,7 @@ VOCABULARY = {
     'depot_pl' : 'Depots'
 }
 ORGANISATION_NAME = "Randebandi"
-ORGANISATION_NAME_CONFIG = {"type" : "Verein",
+ORGANISATION_NAME_CONFIG = {"type" : "Gemüsebaukooperative",
     "gender" : "der"}
 ORGANISATION_LONG_NAME = "Gemüsebaukooperative Randebandi"
 ORGANISATION_ADDRESS = {"name":"Gemüsebaukooperative Randebandi", 
