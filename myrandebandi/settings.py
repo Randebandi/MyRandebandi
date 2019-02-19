@@ -159,7 +159,7 @@ VOCABULARY = {
 }
 ORGANISATION_NAME = "Randebandi"
 ORGANISATION_NAME_CONFIG = {"type" : "Gemüsebaukooperative",
-    "gender" : "der"}
+    "gender" : "F"}
 ORGANISATION_LONG_NAME = "Gemüsebaukooperative Randebandi"
 ORGANISATION_ADDRESS = {"name":"Gemüsebaukooperative Randebandi", 
             "street" : "Nisihof",
