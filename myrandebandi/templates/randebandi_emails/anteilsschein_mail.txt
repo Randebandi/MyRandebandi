@@ -1,4 +1,4 @@
-{% extends "mails/email.txt" %}
+{% extends "randebandi_emails/mail_zusatz.txt" %}
 {% load i18n %}
 {% load config %}
 {% block content %}
