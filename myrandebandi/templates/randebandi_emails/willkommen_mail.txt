@@ -7,7 +7,7 @@
 {% config "faq_doc" as c_faq_doc %}
 {% enriched_organisation "D" as v_d_enriched_organisation %}
 {% vocabulary "member_type" as v_member_type %}
-{% blocktrans %}Wir freuen uns, dich bei {{ v_d_enriched_organisation }} zu begrüssen.{% endblocktrans %}
+{% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei der {{ v_d_enriched_organisation }} {% endblocktrans %}
 
 {% blocktrans %}Um dich auf {{serverurl}} einloggen zu können benutzte folgende Daten{% endblocktrans %}:
 {% trans "Email" %}: {{ username }}
@@ -21,10 +21,10 @@
 {% if c_faq_doc.strip %}
 {% blocktrans with fd=c_faq_doc|safe %}Für weitere Fragen schaust du in den FAQ ({{ fd }}) nach oder schreibst eine Mail an {{ c_info_email }}.{% endblocktrans %}
 {% else %}
-{% blocktrans %}Für weitere Fragen schreibe eine Mail an {{ c_info_email }}.{% endblocktrans %}
+{% blocktrans %}Pro gekauften Anteilscheins erhältst du sogleich ein separates E-Mail mit weiteren Informationen. Bei Fragen kannst du uns gerne ein Mail schreiben an {{ c_info_email }}.{% endblocktrans %}
 {% endif %}
 
 {% blocktrans trimmed %}
-Bis bald und liebe Grüsse die {{ c_organisation_name }}-Betriebsgruppe
+Bis bald und liebe Grüsse das {{ c_organisation_name }}-Kernteam
 {% endblocktrans %}
 {% endblock %}
