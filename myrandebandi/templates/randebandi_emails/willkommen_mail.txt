@@ -8,16 +8,16 @@
 {% config "organisation_name" as c_organisation_name %}
 {% enriched_organisation "D" as v_d_enriched_organisation %}
 {% vocabulary "member_type" as v_member_type %}
-{% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei der {{ v_d_enriched_organisation }} {% endblocktrans %}
+{% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei der {{ v_d_enriched_organisation }}.{% endblocktrans %}
 
-{% blocktrans %}Um dich auf {{serverurl}} einloggen zu können benutzte folgende Daten{% endblocktrans %}:
+{% blocktrans %}Um dich auf unserer Mitglieder-Plattform {{serverurl}} einloggen zu können benutze bitte folgende Daten{% endblocktrans %}:
 
 {% trans "Email" %}: {{ username }}
 {% trans "Passwort" %}: {{ password }}" %}
 
 {% trans "Bitte setze dir hier gleich ein neues Passwort:" %} {{serverurl}}/my/password
 
-{% blocktrans %}Damit wir dich als {{ v_member_type }} freischalten können nutze bitte den folgenden Bestätigungslink um deine Email zu bestätigen:{% endblocktrans %} {{ serverurl }}/my/confirm/{{ onetime_code }}
+{% blocktrans %}Damit wir dich als {{ v_member_type }} freischalten können, nutze bitte den folgenden Bestätigungslink um deine Email zu bestätigen:{% endblocktrans %} {{ serverurl }}/my/confirm/{{ onetime_code }}
 
 {% if c_faq_doc.strip %}
 {% blocktrans with fd=c_faq_doc|safe %}Für weitere Fragen schaust du in den FAQ ({{ fd }}) nach oder schreibst eine Mail an {{ c_info_email }}.{% endblocktrans %}
@@ -28,6 +28,7 @@ Bei Fragen kannst du uns gerne ein E-Mail schreiben auf {{ c_info_email }}{% end
 {% endif %}
 
 {% blocktrans trimmed %}
-Bis bald und liebe Grüsse das {{ c_organisation_name }}-Kernteam
+Bis bald und liebe Grüsse
+Das {{ c_organisation_name }}-Kernteam
 {% endblocktrans %}
 {% endblock %}
