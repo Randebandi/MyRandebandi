@@ -5,23 +5,26 @@
 {% config "enable_shares" as c_enable_shares %}
 {% config "info_email" as c_info_email %}
 {% config "faq_doc" as c_faq_doc %}
+{% config "organisation_name" as c_organisation_name %}
 {% enriched_organisation "D" as v_d_enriched_organisation %}
 {% vocabulary "member_type" as v_member_type %}
 {% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei der {{ v_d_enriched_organisation }} {% endblocktrans %}
 
 {% blocktrans %}Um dich auf {{serverurl}} einloggen zu können benutzte folgende Daten{% endblocktrans %}:
+
 {% trans "Email" %}: {{ username }}
 {% trans "Passwort" %}: {{ password }}" %}
-{% trans "Bitte setze dir hier gleich ein neues Passwort:" %}
-{{serverurl}}/my/password
 
-{% blocktrans %}Damit wir dich als {{ v_member_type }} freischalten können nutze den Bestätigungslink um deine Email zu bestätigen.{% endblocktrans %}
-{% trans "Bestätigungslink" %}: {{ serverurl }}/my/confirm/{{ onetime_code }}
+{% trans "Bitte setze dir hier gleich ein neues Passwort:" %} {{serverurl}}/my/password
+
+{% blocktrans %}Damit wir dich als {{ v_member_type }} freischalten können nutze bitte den folgenden Bestätigungslink um deine Email zu bestätigen:{% endblocktrans %} {{ serverurl }}/my/confirm/{{ onetime_code }}
 
 {% if c_faq_doc.strip %}
 {% blocktrans with fd=c_faq_doc|safe %}Für weitere Fragen schaust du in den FAQ ({{ fd }}) nach oder schreibst eine Mail an {{ c_info_email }}.{% endblocktrans %}
 {% else %}
-{% blocktrans %}Pro gekauften Anteilscheins erhältst du sogleich ein separates E-Mail mit weiteren Informationen. Bei Fragen kannst du uns gerne ein Mail schreiben an {{ c_info_email }}.{% endblocktrans %}
+{% blocktrans %}Pro gekauften Anteilscheins erhältst du sogleich ein separates E-Mail mit weiteren Informationen.
+
+Bei Fragen kannst du uns gerne ein E-Mail schreiben auf {{ c_info_email }}{% endblocktrans %}
 {% endif %}
 
 {% blocktrans trimmed %}
