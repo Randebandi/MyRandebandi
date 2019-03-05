@@ -12,28 +12,32 @@
 {% vocabulary "share_pl" as v_share_pl %}
 {% trans "Hallo" %}
 
-{% blocktrans with sid=share.id %}Du hast bei {{ v_d_enriched_organisation }} 1 {{ v_share }} bestellt.
+{% blocktrans with sid=share.id %}Du hast bei {{ v_d_enriched_organisation }} 1 {{ v_share }} erworben.
 Dieser {{ v_share }} hat die Systemnummer {{ sid }}.{% endblocktrans %}
 
-{% blocktrans %}Sobald du den Betrag von {{ c_currency }} {{ c_share_price }} auf das folgende Konto überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt ein Gemüse-Abo zu beziehen. Unsere Vereinsstatuten und das Betriebsreglement findest du auf unserer Homepage.{% endblocktrans %}:
-    {{ c_addr.name }}
-    {% if c_addr.extra %}
-    {{ c_addr.extra }}
-    {% endif %}    
-    {{ c_addr.street }} {{ c_addr.number }}
+{% blocktrans %}Sobald du den Betrag von {{ c_currency }} {{ c_share_price }} auf das folgende Konto überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt ein Gemüse-Abo zu beziehen.{% endblocktrans %}:
+
+{% blocktrans %}Um die Arbeit der Buchhaltung zu erleichtern zahle bitte nur 1 {{ v_share }} auf einmal.
+Gib zusätzlich in den Zahlungsinformationen die obenstehende Systemnummer und die Emailadresse des {{ v_share }}-Besitzers an
+(dies ist vor allem wichtig wenn du diesen {{ v_share }} für jemand anderen bezahlst){% endblocktrans %}
+
+Konto:
+
+    {{ c_addr.name }}   
     {{ c_addr.zip }} {{ c_addr.city }}
     {{ c_bank.NAME }}
     {% trans "Postkonto-Nummer" %}: {{ c_bank.PC }}
     {% trans "IBAN" %}: {{ c_bank.IBAN }}
     {% trans "BIC" %}: {{ c_bank.BIC }}
 
-{% blocktrans %}Um die Arbeit der Buchhaltung zu erleichtern zahle bitte nur 1 {{ v_share }} auf einmal.
-Gib zusätzlich in den Zahlungsinformationen die obenstehende Systemnummer und die Emailadresse des {{ v_share }}-Besitzers an
-(dies ist vor allem wichtig wenn du diesen {{ v_share }} für jemand anderen bezahlst){% endblocktrans %}
+{% blocktrans %}Sobald du den Betrag für den Anteilsschein überwiesen hast, werden wir dir die Zahlungs- und weitere Informationen zu deinem Gemüse-Abo per E-Mail zusenden.
 
-{% blocktrans %}Sobald du den Betrag für den Anteilsschein überwiesen hast, werden wir dir die Zahlungsinformationen zu deinem Gemüse-Abo per E-Mail zusenden. Wenn du über WhatsApp verfügst, fügen wir Dich auch gerne schon jetzt unserer Gruppe hinzu.{% endblocktrans %}
+Wenn du über WhatsApp verfügst, fügen wir Dich auch gerne schon jetzt unserer Gruppe hinzu.{% endblocktrans %}
 
 {% blocktrans trimmed %}
-Wir freuen uns Dich bald persönlich kennen zu lernen. Das {{ c_organisation_name }}-Kernteam
+Wir freuen uns Dich bald persönlich kennen zu lernen.
+
+Das {{ c_organisation_name }}-Kernteam
+
 {% endblocktrans %}
 {% endblock %}
