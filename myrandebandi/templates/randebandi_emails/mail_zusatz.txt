@@ -3,6 +3,5 @@
 {% block content %}{% endblock %}
 {% endspaceless %}
 ============
-weitere Infos:
-http://{% config "server_url" %}
-https://www.facebook.com/Randebandi-Gemüsebaukooperative-1706095849461055/posts/
+weitere Infos: http://{% config "server_url" %}
+Facebook: Randebandi - Gemüsebaukooperative
