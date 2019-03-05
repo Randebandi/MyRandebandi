@@ -15,7 +15,7 @@
 {% blocktrans with sid=share.id %}Du hast bei {{ v_d_enriched_organisation }} 1 {{ v_share }} bestellt.
 Dieser {{ v_share }} hat die Systemnummer {{ sid }}.{% endblocktrans %}
 
-{% blocktrans %}Sobald du den Betrag von {{ c_currency }} {{ c_share_price }} auf das folgende Konto überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt ein Gemüse-Abo zu beziehen. {% endblocktrans %}:
+{% blocktrans %}Sobald du den Betrag von {{ c_currency }} {{ c_share_price }} auf das folgende Konto überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt ein Gemüse-Abo zu beziehen. Unsere Vereinsstatuten und das Betriebsreglement findest du auf unserer Homepage.{% endblocktrans %}:
     {{ c_addr.name }}
     {% if c_addr.extra %}
     {{ c_addr.extra }}
@@ -31,7 +31,7 @@ Dieser {{ v_share }} hat die Systemnummer {{ sid }}.{% endblocktrans %}
 Gib zusätzlich in den Zahlungsinformationen die obenstehende Systemnummer und die Emailadresse des {{ v_share }}-Besitzers an
 (dies ist vor allem wichtig wenn du diesen {{ v_share }} für jemand anderen bezahlst){% endblocktrans %}
 
-{% blocktrans %}Sobald den Betrag für den Anteilsschein überwiesen hast, werden wir dir die Zahlungsinformationen zu deinem Gemüse-Abo per E-Mail zusenden.{% endblocktrans %}
+{% blocktrans %}Sobald du den Betrag für den Anteilsschein überwiesen hast, werden wir dir die Zahlungsinformationen zu deinem Gemüse-Abo per E-Mail zusenden. Wenn du über WhatsApp verfügst, fügen wir Dich auch gerne schon jetzt unserer Gruppe hinzu.{% endblocktrans %}
 
 {% blocktrans trimmed %}
 Wir freuen uns Dich bald persönlich kennen zu lernen. Das {{ c_organisation_name }}-Kernteam
