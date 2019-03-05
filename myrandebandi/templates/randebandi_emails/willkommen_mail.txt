@@ -10,7 +10,9 @@
 {% vocabulary "member_type" as v_member_type %}
 {% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei der {{ v_d_enriched_organisation }}.{% endblocktrans %}
 
-{% blocktrans %}Um dich auf unserer Mitglieder-Plattform {{serverurl}} einloggen zu können benutze bitte folgende Daten{% endblocktrans %}:
+{% blocktrans %}Auf unserer Mitglieder-Plattform {{serverurl}} kannst du dich für die Arbeitseinsätze eintragen, sowie dein Abo und deine Personalien verwalten.
+
+Um dich einzuloggen, kannst du zukünftig folgende Daten benutzen{% endblocktrans %}:
 
 {% trans "Email" %}: {{ username }}
 {% trans "Passwort" %}: {{ password }}" %}
