@@ -30,7 +30,7 @@ Konto:
     {% trans "IBAN" %}: {{ c_bank.IBAN }}
     {% trans "BIC" %}: {{ c_bank.BIC }}
 
-{% blocktrans %}Sobald du den Betrag für den Anteilsschein überwiesen hast, werden wir dir die Zahlungs- und weitere Informationen zu deinem Gemüse-Abo per E-Mail zusenden.
+{% blocktrans %}Sobald du den Betrag für den Anteilsschein überwiesen hast, werden wir dir die Zahlungs- und weitere Informationen zu deinem Gemüse-Abo und den Arbeitseinsätzen per E-Mail zusenden.
 
 Wenn du über WhatsApp verfügst, fügen wir Dich auch gerne schon jetzt unserer Gruppe hinzu.{% endblocktrans %}
 
