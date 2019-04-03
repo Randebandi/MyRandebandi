@@ -35,7 +35,7 @@ Konto:
 Wenn du über WhatsApp verfügst, fügen wir Dich auch gerne schon jetzt unserer Gruppe hinzu.{% endblocktrans %}
 
 {% blocktrans trimmed %}
-Wir freuen uns Dich bald persönlich kennen zu lernen.
+Wir freuen uns, Dich bald persönlich kennen zu lernen.
 
 Das {{ c_organisation_name }}-Kernteam
 
