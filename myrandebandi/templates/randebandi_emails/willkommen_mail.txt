@@ -15,7 +15,7 @@
 Um dich einzuloggen, kannst du zukünftig folgende Daten benutzen{% endblocktrans %}:
 
 {% trans "Email" %}: {{ username }}
-{% trans "Passwort" %}: {{ password }}" %}
+{% trans "Passwort" %}: {{ password }}
 
 {% trans "Bitte setze dir hier gleich ein neues Passwort:" %} {{serverurl}}/my/password
 
@@ -30,7 +30,8 @@ Bei Fragen kannst du uns gerne ein E-Mail schreiben auf {{ c_info_email }}{% end
 {% endif %}
 
 {% blocktrans trimmed %}
-Bis bald und liebe Grüsse
+Bis bald und liebe Grüsse.
+
 Das {{ c_organisation_name }}-Kernteam
 {% endblocktrans %}
 {% endblock %}
