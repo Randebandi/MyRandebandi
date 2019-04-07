@@ -39,7 +39,7 @@ Wenn du über WhatsApp verfügst, fügen wir Dich auch gerne schon jetzt unserer
 {% endif %}
 
 {% blocktrans trimmed %}
-Bis bald und liebe Grüsse.
+Wir freuen uns, Dich bald persönlich kennen zu lernen.
 
 Das {{ c_organisation_name }}-Kernteam
 {% endblocktrans %}
