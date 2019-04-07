@@ -10,7 +10,13 @@
 {% vocabulary "member_type" as v_member_type %}
 {% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei der {{ v_d_enriched_organisation }}.{% endblocktrans %}
 
-{% blocktrans %}Auf unserer Mitglieder-Plattform {{serverurl}} kannst du dich für die Arbeitseinsätze eintragen, sowie dein Abo und deine Personalien verwalten.
+Wir bauen gemeinsam mit unseren Mitgliedern knackiges Biogemüse in der Rippertschwand in Neuenkirch an.
+
+Jedes Mitglied der Genossenschaft kauft mindestens einen Anteilschein. Damit finanziert die Kooperative die Infrastruktur. Somit bist du Miteigentümer_In des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen. Bei einem Austritt aus der Genossenschaft bekommst du deinen Anteilschein zurück erstattet.
+
+Pro gekauften Anteilschein erhältst du sogleich ein separates Email mit entsprechenden Zahlungsinformationen zugesandt.
+
+{% blocktrans %}Melde dich mit den untenstehenden Angaben im Mitgliederbereich auf {{serverurl}} an. Dort findest du deine Abo-Übersicht und verwaltest deine Tätigkeitsbereiche, Einsätze und Personalien.
 
 Um dich einzuloggen, kannst du zukünftig folgende Daten benutzen{% endblocktrans %}:
 
@@ -19,14 +25,15 @@ Um dich einzuloggen, kannst du zukünftig folgende Daten benutzen{% endblocktran
 
 {% trans "Bitte setze dir hier gleich ein neues Passwort:" %} {{serverurl}}/my/password
 
-{% blocktrans %}Damit wir dich als {{ v_member_type }} freischalten können, nutze bitte den folgenden Bestätigungslink um deine Email zu bestätigen:{% endblocktrans %} {{ serverurl }}/my/confirm/{{ onetime_code }}
+{% blocktrans %}Klicke bitte auf den folgenden Bestätigungslink, um deine Emailadresse zu bestätigen und damit wir dich als {{ v_member_type }} freischalten können:
+{% endblocktrans %} {{ serverurl }}/my/confirm/{{ onetime_code }}
+
+Bitte trage dich unter „Mitarbeit“ bei deinen zwei bevorzugten Tätigkeitsbereichen ein (damit wir bei Umfragen wissen, wer wo mithelfen möchte), danach ist dein Konto ist fertig eingerichtet.
 
 {% if c_faq_doc.strip %}
-{% blocktrans with fd=c_faq_doc|safe %}Für weitere Fragen schaust du in den FAQ ({{ fd }}) nach oder schreibst eine Mail an {{ c_info_email }}.{% endblocktrans %}
+{% blocktrans with fd=c_faq_doc|safe %}Bei weiteren Fragen schaust du in den FAQ ({{ fd }}) nach oder schreibst eine Mail an {% config "info_email" %}.{% endblocktrans %}
 {% else %}
-{% blocktrans %}Pro gekauften Anteilscheins erhältst du sogleich ein separates E-Mail mit weiteren Informationen.
-
-Bei Fragen kannst du uns gerne ein E-Mail schreiben auf {{ c_info_email }}{% endblocktrans %}
+{% blocktrans %}Bei Fragen kannst du uns gerne ein E-Mail schreiben an {{ c_info_email }}{% endblocktrans %}
 {% endif %}
 
 {% blocktrans trimmed %}
