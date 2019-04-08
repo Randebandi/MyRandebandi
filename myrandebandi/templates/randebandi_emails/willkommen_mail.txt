@@ -8,13 +8,14 @@
 {% config "organisation_name" as c_organisation_name %}
 {% enriched_organisation "D" as v_d_enriched_organisation %}
 {% vocabulary "member_type" as v_member_type %}
-{% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei der {{ v_d_enriched_organisation }}.{% endblocktrans %}
+{% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei {{ v_d_enriched_organisation }}.{% endblocktrans %}
 
-Wir bauen gemeinsam mit unseren Mitgliedern knackiges Biogemüse in der Rippertschwand in Neuenkirch an.
+Jedes Mitglied der Kooperative kauft mindestens einen Anteilschein. Somit bist du Miteigentümer_In des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen und wir können gemeinsam die Infrastruktur für den Gemüseanbau finanzieren. Bei einem Austritt aus der Genossenschaft bekommst du deinen Anteilschein zurück erstattet.
 
-Jedes Mitglied der Genossenschaft kauft mindestens einen Anteilschein. Damit finanziert die Kooperative die Infrastruktur. Somit bist du Miteigentümer_In des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen. Bei einem Austritt aus der Genossenschaft bekommst du deinen Anteilschein zurück erstattet.
+-> Pro gekauften Anteilschein erhältst du sogleich ein separates Email mit entsprechenden Zahlungsinformationen zugesandt.
 
-Pro gekauften Anteilschein erhältst du sogleich ein separates Email mit entsprechenden Zahlungsinformationen zugesandt.
+--------------------------
+Deine Login-Informationen
 
 {% blocktrans %}Melde dich mit den untenstehenden Angaben im Mitgliederbereich auf {{serverurl}} an. Dort findest du deine Abo-Übersicht und verwaltest deine Tätigkeitsbereiche, Einsätze und Personalien.
 
@@ -23,24 +24,27 @@ Um dich einzuloggen, kannst du zukünftig folgende Daten benutzen{% endblocktran
 {% trans "Email" %}: {{ username }}
 {% trans "Passwort" %}: {{ password }}
 
-{% trans "Bitte setze dir hier gleich ein neues Passwort:" %} {{serverurl}}/my/password
-
 {% blocktrans %}Klicke bitte auf den folgenden Bestätigungslink, um deine Emailadresse zu bestätigen und damit wir dich als {{ v_member_type }} freischalten können:
 {% endblocktrans %} {{ serverurl }}/my/confirm/{{ onetime_code }}
 
-Bitte trage dich unter „Mitarbeit“ bei deinen zwei bevorzugten Tätigkeitsbereichen ein (damit wir bei Umfragen wissen, wer wo mithelfen möchte), danach ist dein Konto ist fertig eingerichtet.
+{% trans "Bitte setze dir hier gleich ein neues Passwort:" %} {{serverurl}}/my/password
+
+----------------------------------------------------
+Informationen zum Mitgliederbereich "Rande-Zentrale"
+
+Um deine Anmeldung abzuschliessen, trage dich bitte unter „Mitarbeit“ bei deinen zwei bevorzugten Tätigkeitsbereichen ein (damit wir bei Umfragen wissen, wer wo mithelfen möchte).
 
 {% if c_faq_doc.strip %}
-{% blocktrans with fd=c_faq_doc|safe %}Bei weiteren Fragen schaust du in den FAQ ({{ fd }}) nach oder schreibst eine Mail an {{ c_info_email }}.
+{% blocktrans with fd=c_faq_doc|safe %}Bei weiteren Fragen kannst du gerne die FAQ ({{ fd }}) konsultieren oder du schreibst uns eine Mail an {{ c_info_email }}.
 
 Wenn du über WhatsApp verfügst, fügen wir Dich auch gerne schon jetzt unserer Gruppe hinzu.{% endblocktrans %}
 {% else %}
 {% blocktrans %}Bei Fragen kannst du uns gerne ein E-Mail schreiben an {{ c_info_email }}{% endblocktrans %}
 {% endif %}
 
-{% blocktrans trimmed %}
 Wir freuen uns, Dich bald persönlich kennen zu lernen.
 
+{% blocktrans trimmed %}
 Das {{ c_organisation_name }}-Kernteam
 {% endblocktrans %}
 {% endblock %}
