@@ -31,7 +31,7 @@ Um dich einzuloggen, kannst du zukünftig folgende Daten benutzen{% endblocktran
 Bitte trage dich unter „Mitarbeit“ bei deinen zwei bevorzugten Tätigkeitsbereichen ein (damit wir bei Umfragen wissen, wer wo mithelfen möchte), danach ist dein Konto ist fertig eingerichtet.
 
 {% if c_faq_doc.strip %}
-{% blocktrans with fd=c_faq_doc|safe %}Bei weiteren Fragen schaust du in den FAQ ({{ fd }}) nach oder schreibst eine Mail an {% config "info_email" %}.
+{% blocktrans with fd=c_faq_doc|safe %}Bei weiteren Fragen schaust du in den FAQ ({{ fd }}) nach oder schreibst eine Mail an {{ c_info_email }}.
 
 Wenn du über WhatsApp verfügst, fügen wir Dich auch gerne schon jetzt unserer Gruppe hinzu.{% endblocktrans %}
 {% else %}
