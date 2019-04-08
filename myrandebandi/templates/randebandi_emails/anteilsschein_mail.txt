@@ -10,14 +10,14 @@
 {% enriched_organisation "D" as v_d_enriched_organisation %}
 {% vocabulary "share" as v_share %}
 {% vocabulary "share_pl" as v_share_pl %}
-{% trans "Hallo" %}
+{% trans "Guten Tag" %}
 
 {% blocktrans with sid=share.id %}Du hast bei {{ v_d_enriched_organisation }} 1 {{ v_share }} erworben.
 {% endblocktrans %}
 
 {% blocktrans %}Sobald du den Betrag von {{ c_currency }} {{ c_share_price }} auf das folgende Konto überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt ein Gemüse-Abo zu beziehen.{% endblocktrans %}
 
-{% blocktrans %}Wichtig: Bitte gib in den Zahlungsinformationen die Anteilschein-Nummer {{ sid }} an.
+{% blocktrans with sid=share.id %}Wichtig: Bitte gib in den Zahlungsinformationen die Anteilschein-Nummer {{ sid }} an.
 {% endblocktrans %}
 
 Konto:
