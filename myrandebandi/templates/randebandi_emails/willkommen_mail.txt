@@ -17,7 +17,7 @@ Jedes Mitglied der Kooperative kauft mindestens einen Anteilschein. Somit bist d
 ---------------------------
 Deine Login-Informationen
 
-{% blocktrans %}Melde dich mit den untenstehenden Angaben im Mitgliederbereich der "Rande-Zentrale" auf {{serverurl}} an. Dort findest du deine Abo-Übersicht und verwaltest deine Tätigkeitsbereiche, Einsätze und Personalien.
+{% blocktrans %}Melde dich mit den untenstehenden Angaben im "Rande-Planer" (Mitgliederbereich der Randebandi) auf {{serverurl}} an. Dort findest du deine Abo-Übersicht und verwaltest deine Tätigkeitsbereiche, Einsätze und Personalien.
 
 Um dich einzuloggen, kannst du zukünftig folgende Daten benutzen{% endblocktrans %}:
 
