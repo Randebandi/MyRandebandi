@@ -19,7 +19,7 @@ Deine Login-Informationen
 
 {% blocktrans %}Melde dich mit den untenstehenden Angaben im "Rande-Planer" (Mitgliederbereich der Randebandi) auf {{serverurl}} an. Dort findest du deine Abo-Übersicht und verwaltest deine Tätigkeitsbereiche, Einsätze und Personalien.
 
-Um dich einzuloggen, kannst du zukünftig folgende Daten benutzen{% endblocktrans %}:
+Um dich einzuloggen, kannst du folgende Daten benutzen{% endblocktrans %}:
 
 {% trans "Email" %}: {{ username }}
 {% trans "Passwort" %}: {{ password }}
