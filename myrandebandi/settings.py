@@ -210,7 +210,7 @@ GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 EMAILS = {
     'welcome': 'randebandi_emails/willkommen_mail.txt',
     'co_welcome': 'randebandi_emails/mitabonnent_willkommen.txt',
-    'co_added': 'mails/added_mail.txt',
+    'co_added': 'randebandi_emails/mitabonnent_info.txt',
     'password': 'mails/password_reset_mail.txt',
     'j_reminder': 'mails/job_reminder_mail.txt',
     'j_canceled': 'mails/job_canceled_mail.txt',
