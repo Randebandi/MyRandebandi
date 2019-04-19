@@ -22,25 +22,32 @@
 {% endif %}
 
 
-{% blocktrans %}Um dich auf {{serverurl}} einloggen zu können benutzte folgende Daten{% endblocktrans %}:
-{% trans "Email" %}: {{ username }}
-{% trans "Passwort" %}: {{ password }}" %}
-{% trans "Bitte setze dir hier gleich ein neues Passwort:" %}
-{{serverurl}}/my/password
+{% blocktrans %}Melde dich mit den untenstehenden Angaben im "Rande-Planer" (Mitgliederbereich der Randebandi) auf {{serverurl}} an. Dort findest du deine Abo-Übersicht und verwaltest deine Tätigkeitsbereiche, Einsätze und Personalien.
 
-{% blocktrans %}Damit wir dich als {{ v_member_type }} freischalten können nutze den Bestätigungslink um deine Email zu bestätigen.{% endblocktrans %}
-{% trans "Bestätigungslink" %}: {{ serverurl }}/my/confirm/{{ onetime_code }}
-{% trans "Damit bestätigst du dass du damit einverstanden bist" %}:
-- {% blocktrans %}{{ c_organisation_name }}-{{ v_member_type }} zu werden{% endblocktrans %}
-- {% blocktrans %}dem/r {{ v_subscription }} beizutreten{% endblocktrans %}
-- {% blocktrans %}die bestellten {{ v_share_pl }} zu erwerben{% endblocktrans %}
-{% trans "Ebenfalls bestätigst du, dass du folgendes gelesen hast" %}:
+Um dich einzuloggen, kannst du folgende Daten benutzen{% endblocktrans %}:
+
+{% trans "Email" %}: {{ username }}
+{% trans "Passwort" %}: {{ password }}
+
+{% trans "Folgend findest du unsere Grundlagendokumente:" %}:
  - {% trans "die Statuten" %} ({{ c_bylaws|safe }})
 {% if c_business_regulations.strip %}
 - {% trans "das Betriebsreglement" %} ({{ c_business_regulations|safe }})
 {% endif %}
 
-{% blocktrans %}Solltest du irrtumlicherweise hier eingetragen worden sein melde dies bitte {{ c_info_email }}.{% endblocktrans %}
+{% blocktrans %}Klicke bitte auf den folgenden Bestätigungslink, um deine Emailadresse und deine Mitgliedschaft zu bestätigen und dass du die Grundlagendokumente gelesen hast:
+{% endblocktrans %} {{ serverurl }}/my/confirm/{{ onetime_code }}
+
+
+{% trans "Bitte setze dir hier gleich ein neues Passwort:" %} {{serverurl}}/my/password
+
+{% trans "Damit bestätigst du dass du damit einverstanden bist" %}:
+- {% blocktrans %}{{ c_organisation_name }}-{{ v_member_type }} zu werden{% endblocktrans %}
+- {% blocktrans %}dem {{ v_subscription }} beizutreten{% endblocktrans %}
+
+{% blocktrans %}Die Zahlungsinformationen für allenfalls bestellte {{ v_share_pl }} zu erwerben, erhältst du in einem separaten E-Mail{% endblocktrans %}
+
+{% blocktrans %}Solltest du irrtumlicherweise hier eingetragen worden sein, melde dies bitte {{ c_info_email }}.{% endblocktrans %}
 
 {% if c_faq_doc.strip %}
 {% blocktrans with fd=c_faq_doc|safe %}Für weitere Fragen schaust du in den FAQ ({{ fd }}) nach oder schreibst eine Mail an {{ c_info_email }}.{% endblocktrans %}
@@ -48,7 +55,9 @@
 {% blocktrans %}Für weitere Fragen schreibe eine Mail an {{ c_info_email }}.{% endblocktrans %}
 {% endif %}
 
+Wir freuen uns, Dich bald persönlich kennen zu lernen.
+
 {% blocktrans trimmed %}
-Bis bald und liebe Grüsse die {{ c_organisation_name }}-Betriebsgruppe
+Das {{ c_organisation_name }}-Kernteam
 {% endblocktrans %}
 {% endblock %}
