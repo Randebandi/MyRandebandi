@@ -18,8 +18,9 @@
 {% blocktrans %}Solltest du irrtumlicherweise hier eingetragen worden sein melde dies bitte an{{ c_info_email }}.
 Anderenfalls gehen wir davon aus, dass dies seine Richtigkeit hat.{% endblocktrans %}
 
-{% blocktrans trimmed %}
 Bis bald und liebe Grüsse
+
+{% blocktrans trimmed %}
 Das {{ c_organisation_name }}-Kernteam
 {% endblocktrans %}
 {% endblock %}
