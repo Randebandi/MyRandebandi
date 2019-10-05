@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'juntagrico',
     'impersonate',
+    'crispy_forms',
     'myrandebandi',
 ]
 
@@ -61,7 +62,6 @@ TEMPLATES = [
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
                 'django.template.loaders.app_directories.Loader',
-                'juntagrico.personalisation.loaders.personal_directories.Loader'
             ],
             'debug' : True
         },
@@ -139,6 +139,11 @@ LOGIN_REDIRECT_URL = "/my/home"
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 MEDIA_ROOT = 'media'
+
+"""
+     Crispy Settings
+"""
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 VOCABULARY = {
     'member': 'Mitglied',
