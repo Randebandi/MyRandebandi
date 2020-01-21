@@ -71,7 +71,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'myrandebandi.wsgi.application'
 
 
-LANGUAGE_CODE = 'de-ch'
+LANGUAGE_CODE = 'de'
 
 SITE_ID = 1
 
