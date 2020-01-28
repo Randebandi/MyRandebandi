@@ -133,6 +133,16 @@ IMPERSONATE = {
 
 LOGIN_REDIRECT_URL = "/my/home"
 
+
+"""
+    Admin Settings
+"""
+ADMINS = [
+    ('Admin', os.environ.get('JUNTAGRICO_ADMIN_EMAIL')),
+    ('Juntagrico', os.environ.get('JUNTAGRICO_DS_EMAIL'))
+]
+MANAGERS = ADMINS
+
 """
     File & Storage Settings
 """
