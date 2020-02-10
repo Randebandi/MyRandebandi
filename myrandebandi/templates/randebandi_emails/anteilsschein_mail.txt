@@ -12,22 +12,23 @@
 {% vocabulary "share_pl" as v_share_pl %}
 {% trans "Guten Tag" %}
 
-{% blocktrans with sid=share.id %}Du hast bei {{ v_d_enriched_organisation }} 1 {{ v_share }} erworben.
-{% endblocktrans %}
+{% blocktrans with sc=shares.count%}Du hast bei {{ v_d_enriched_organisation }} {{sc}} {{ v_share_pl }} bestellt.{% endblocktrans %}
 
 {% blocktrans %}Sobald du den Betrag von {{ c_currency }} {{ c_share_price }} auf das folgende Konto überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt ein Gemüse-Abo zu beziehen.{% endblocktrans %}
 
-{% blocktrans with sid=share.id %}Wichtig: Bitte gib in den Zahlungsinformationen die Anteilschein-Nummer {{ sid }} an.
-{% endblocktrans %}
+{% for share in shares %}{% blocktrans with sid=share.id %}Wichtig: Bitte gib in den Zahlungsinformationen die Anteilschein-Nummer {{ sid }} an{% endblocktrans %}
+{% endfor %}
 
 Konto:
-
-    {{ c_addr.name }}   
+    {{ c_addr.name }}
+    {% if c_addr.extra %}{{ c_addr.extra }}{% endif %}
+    {{ c_addr.street }} {{ c_addr.number }}
     {{ c_addr.zip }} {{ c_addr.city }}
     {{ c_bank.NAME }}
     {% trans "Postkonto-Nummer" %}: {{ c_bank.PC }}
     {% trans "IBAN" %}: {{ c_bank.IBAN }}
     {% trans "BIC" %}: {{ c_bank.BIC }}
+
 
 {% blocktrans trimmed %}
 Das {{ c_organisation_name }}-Kernteam
