@@ -13,10 +13,9 @@
 {% trans "Guten Tag" %}
 
 {% blocktrans with sc=shares.count%}Du hast bei {{ v_d_enriched_organisation }} {{sc}} {{ v_share_pl }} bestellt{% endblocktrans %}:
-{% for share in shares %}{% blocktrans with sid=share.id %}{{ v_share }} mit Systemnummer {{ sid }}{% endblocktrans %}
+{% for share in shares %}{% blocktrans with sid=share.id %}{{ v_share }} mit Nummer: {{ sid }}{% endblocktrans %}
 {% endfor %}
-
-{% blocktrans %}Ein Anteilsschein ist {{ c_currency }} {{ c_share_price }} Wert. Sobald du den Betrag von auf das folgende Konto überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt ein Gemüse-Abo zu beziehen.{% endblocktrans %}
+{% blocktrans %}Ein Anteilsschein ist {{ c_currency }} {{ c_share_price }} Wert. Sobald du den Betrag auf das folgende Konto überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt ein Gemüse-Abo zu beziehen.{% endblocktrans %}
 
 Konto:
     {{ c_addr.name }}
@@ -28,9 +27,8 @@ Konto:
     {% trans "IBAN" %}: {{ c_bank.IBAN }}
     {% trans "BIC" %}: {{ c_bank.BIC }}
 
-{% blocktrans %}Wichtig! Um die Arbeit der Buchhaltung zu erleichtern zahle bitte nur 1 {{ v_share }} auf einmal.
-Gib im Betreff die Systemnummer an und die Emailadresse der Halterin oder des Halters des/r {{ v_share }} an
-(dies ist vor allem wichtig wenn du diese/n/s {{ v_share }} für jemand anderen bezahlst){% endblocktrans %}
+{% blocktrans %}Wichtig! Falls du mehrere Anteilsscheine bestellt hast, zahle bitte nur 1 {{ v_share }} auf einmal ein und
+gib im Betreff die Anteilsschein-Nummer an.{% endblocktrans %}
 
 {% blocktrans trimmed %}
 Das {{ c_organisation_name }}-Kernteam
