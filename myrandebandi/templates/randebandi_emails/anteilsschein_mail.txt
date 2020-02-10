@@ -27,8 +27,7 @@ Konto:
     {% trans "IBAN" %}: {{ c_bank.IBAN }}
     {% trans "BIC" %}: {{ c_bank.BIC }}
 
-{% blocktrans %}Wichtig! Falls du mehrere Anteilsscheine bestellt hast, zahle bitte nur 1 {{ v_share }} auf einmal ein und
-gib im Betreff die Anteilsschein-Nummer an.{% endblocktrans %}
+{% blocktrans %}Wichtig! Bitte gib in den Zahlungsinformationen die Anteilschein-Nummer an.{% endblocktrans %}
 
 {% blocktrans trimmed %}
 Das {{ c_organisation_name }}-Kernteam
