@@ -27,8 +27,6 @@ Um dich einzuloggen, kannst du folgende Daten benutzen{% endblocktrans %}:
 {% blocktrans %}Klicke bitte auf den folgenden Bestätigungslink, um deine Emailadresse zu bestätigen und damit wir dich als {{ v_member_type }} freischalten können:
 {% endblocktrans %} {% trans "Bestätigungslink" %}: {{ serverurl }}{% url 'confirm' member.get_hash %}
 
-{% trans "Bitte setze dir hier gleich ein neues Passwort:" %} {{serverurl}}/my/password
-
 --------------------------------
 Informationen zum Rande-Planer
 
