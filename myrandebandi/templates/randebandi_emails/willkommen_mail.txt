@@ -21,7 +21,7 @@ Deine Login-Informationen
 
 Um dich einzuloggen, kannst du folgende Daten benutzen{% endblocktrans %}:
 
-{% trans "Email" %}: {{ username }}
+{% trans "Email" %}: {{ member.email }}
 {% trans "Passwort" %}: {{ password }}
 
 {% blocktrans %}Klicke bitte auf den folgenden Bestätigungslink, um deine Emailadresse zu bestätigen und damit wir dich als {{ v_member_type }} freischalten können:
