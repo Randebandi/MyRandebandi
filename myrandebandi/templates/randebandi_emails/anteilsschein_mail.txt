@@ -15,19 +15,8 @@
 {% blocktrans with sc=shares.count%}Du hast bei {{ v_d_enriched_organisation }} {{sc}} {{ v_share_pl }} bestellt{% endblocktrans %}:
 {% for share in shares %}{% blocktrans with sid=share.id %}{{ v_share }} mit Nummer: {{ sid }}{% endblocktrans %}
 {% endfor %}
-{% blocktrans with sc=shares.count%}Ein Anteilsschein ist {{ c_currency }} {{ c_share_price }} Wert. Sobald du den Betrag auf das folgende Konto überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt ein Gemüse-Abo zu beziehen.{% endblocktrans %}
+{% blocktrans with sc=shares.count%}Ein Anteilsschein ist {{ c_currency }} {{ c_share_price }} Wert. Du wirst bald in einem separaten eMail die zugehörige Rechnung erhalten. Sobald du den Betrag überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt ein Gemüse-Abo zu beziehen.{% endblocktrans %}
 
-Konto:
-    {{ c_addr.name }}
-    {% if c_addr.extra %}{{ c_addr.extra }}{% endif %}
-    {{ c_addr.street }} {{ c_addr.number }}
-    {{ c_addr.zip }} {{ c_addr.city }}
-    {{ c_bank.NAME }}
-    {% trans "Postkonto-Nummer" %}: {{ c_bank.PC }}
-    {% trans "IBAN" %}: {{ c_bank.IBAN }}
-    {% trans "BIC" %}: {{ c_bank.BIC }}
-
-{% blocktrans %}Wichtig! Bitte gib in den Zahlungsinformationen die Anteilschein-Nummer an.{% endblocktrans %}
 
 {% blocktrans trimmed %}
 Das {{ c_organisation_name }}-Kernteam
