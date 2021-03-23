@@ -229,3 +229,6 @@ EMAILS = {
     'co_added': 'randebandi_emails/mitabonnent_info.txt',
     's_created': 'randebandi_emails/anteilsschein_mail.txt',
 }
+
+FROM_FILTER = {'filter_expression': '.*@randebandi\.ch',
+               'replacement_from': 'info@randebandi.ch'}
