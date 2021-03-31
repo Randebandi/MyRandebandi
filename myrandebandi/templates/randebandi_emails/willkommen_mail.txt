@@ -41,6 +41,12 @@ Um deine Anmeldung abzuschliessen, trage dich bitte unter „Mitarbeit“ bei de
 {% blocktrans %}Bei Fragen kannst du uns gerne ein E-Mail schreiben an {{ c_info_email }}{% endblocktrans %}
 {% endif %}
 
+--------------------------------
+Mailverteiler
+
+Etwa einmal pro Monat versenden wir vom Kernteam eine Infomail und das Gartenteam sendet jeweils zur Tasche ein Gartenmail. Um diese zu erhalten, trage dich bitte im diesem Formular ein: http://eepurl.com/huJfE1
+
+
 Wir freuen uns, Dich bald persönlich kennen zu lernen.
 
 {% blocktrans trimmed %}
