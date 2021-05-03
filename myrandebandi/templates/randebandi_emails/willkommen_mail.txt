@@ -10,6 +10,11 @@
 {% vocabulary "member_type" as v_member_type %}
 {% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei {{ v_d_enriched_organisation }}.{% endblocktrans %}
 
+Im Moment haben wir die maximale Abo-Anzahl erreicht und können dir deshalb kein Abo ausstellen. Mit deiner Anmeldung bist du jedoch bereits auf unserer Warteliste und kriegst von uns Bescheid, wenn es wieder freie Plätze gibt. Oder frag mal beim Katzhof nach, der in der Region ein sehr ähnliches Angebot hat (www.katzhof.ch). Bitte lass uns wissen, falls du nicht mehr interessiert bist. 
+
+Falls du trotzdem bereits Mitglied werden willst, z.B. um an der GV mitzuwirken oder bei Garten-Einsätzen mitzumachen, kannst du deinen Anteilschein wie im separaten Mail beschrieben einzahlen. Oder du kannst damit warten, bis ein Abo-Platz frei wird, dann ist das separate Mail vorerst hinfällig. 
+
+--------------------------
 
 Jedes Mitglied der Kooperative kauft mindestens einen Anteilschein. Somit bist du Miteigentümer_In des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen und wir können gemeinsam die Infrastruktur für den Gemüseanbau finanzieren. Bei einem Austritt aus der Genossenschaft bekommst du deinen Anteilschein zurück erstattet.
 
@@ -38,6 +43,7 @@ Mailverteiler
 
 Etwa einmal pro Monat versenden wir vom Kernteam eine Infomail und das Gartenteam sendet jeweils zur Tasche ein Gartenmail. Um diese zu erhalten, trage dich bitte im diesem Formular ein: http://eepurl.com/huJfE1
 
+Ausserdem gibt es einen Threema-Chat fürs Smartphone: Wenn du da dabei sein möchtest, sende deine Threema-ID direkt an Christa (christa@birbaum.ch), sie wird dich zufügen.
 
 {% if c_faq_doc.strip %}
 {% blocktrans with fd=c_faq_doc|safe %}Bei weiteren Fragen kannst du gerne die FAQ-Seite ({{ fd }}) besuchen oder du schreibst uns eine Mail an {{ c_info_email }}.
