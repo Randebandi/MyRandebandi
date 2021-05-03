@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'impersonate',
     'crispy_forms',
     'myrandebandi',
+    'adminsortable2',
 ]
 
 ROOT_URLCONF = 'myrandebandi.urls'
