@@ -214,15 +214,7 @@ BILLING = False
 BUSINESS_YEAR_START = {"day":1, "month":5}
 BUSINESS_YEAR_CANCELATION_MONTH = 1
 MEMBERSHIP_END_MONTH = 4
-IMAGES = {'status_100': '/static/img/status_100.png',
-            'status_75': '/static/img/status_75.png',
-            'status_50': '/static/img/status_50.png',
-            'status_25': '/static/img/status_25.png',
-            'status_0': '/static/img/status_0.png',
-            'single_full': '/static/img/single_full.png',
-            'single_empty': '/static/img/single_empty.png',
-            'single_core': '/static/img/single_core.png',
-            'core': '/static/img/rande.png'}
+IMAGES = {           'core': '/static/img/rande.png'}
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 EMAILS = {
     'welcome': 'randebandi_emails/willkommen_mail.txt',
