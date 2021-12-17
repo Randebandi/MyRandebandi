@@ -36,13 +36,13 @@ Um dich einzuloggen, kannst du folgende Daten benutzen{% endblocktrans %}:
 {% trans "Email" %}: {{ co_member.email }}
 {% trans "Passwort" %}: {{ password }}
 
-{% blocktrans %}Klicke bitte auf den folgenden Bestätigungslink, um deine Emailadresse und deine Mitgliedschaft zu bestätigen und dass du die Grundlagendokumente gelesen hast:
+{% blocktrans %}Klicke bitte auf den folgenden Bestätigungslink, um deine E-Mailadresse und deine Mitgliedschaft zu bestätigen und dass du die Grundlagendokumente gelesen hast:
 {% endblocktrans %} {{ serverurl }}{% url 'confirm' co_member.get_hash %}
 
 ----------------------
 Weitere Informationen
 
-Um deine Anmeldung abzuschliessen, trage dich bitte unter „Mitarbeit“ bei deinen zwei bevorzugten Tätigkeitsbereichen ein (damit wir bei Umfragen wissen, wer wo mithelfen möchte).
+Um deine Anmeldung abzuschliessen, trage dich bitte unter „Mitarbeit“ bei deinen bevorzugten Tätigkeitsbereichen ein (damit wir bei Umfragen wissen, wer wo mithelfen möchte).
 
 --------------------------------
 Mailverteiler
