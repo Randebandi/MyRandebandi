@@ -10,19 +10,15 @@
 {% vocabulary "member_type" as v_member_type %}
 {% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei {{ v_d_enriched_organisation }}.{% endblocktrans %}
 
-Im Moment haben wir die maximale Abo-Anzahl erreicht und können dir deshalb kein Abo ausstellen. Mit deiner Anmeldung bist du jedoch bereits auf unserer Warteliste und kriegst von uns Bescheid, wenn es wieder freie Plätze gibt. Oder frag mal beim Katzhof nach, der in der Region ein sehr ähnliches Angebot hat (www.katzhof.ch). Bitte lass uns wissen, falls du nicht mehr interessiert bist. 
+Im Moment haben wir die maximale Abo-Anzahl erreicht und können dir deshalb kein Abo ausstellen. Mit deiner Anmeldung bist du jedoch auf unserer Warteliste und kriegst von uns Bescheid, wenn es wieder freie Plätze gibt. Normalerweise können wir dir jeweils im Januar mitteilen, ob für die kommende Saison, die Anfang Mai startet, Plätze frei werden.
 
-Falls du trotzdem bereits Mitglied werden willst, z.B. um an der GV mitzuwirken oder bei Garten-Einsätzen mitzumachen, kannst du deinen Anteilschein wie im separaten Mail beschrieben einzahlen. Oder du kannst damit warten, bis ein Abo-Platz frei wird, dann ist das separate Mail vorerst hinfällig. 
-
---------------------------
-
-Jedes Mitglied der Kooperative kauft mindestens einen Anteilschein. Somit bist du Miteigentümer_In des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen und wir können gemeinsam die Infrastruktur für den Gemüseanbau finanzieren. Bei einem Austritt aus der Genossenschaft bekommst du deinen Anteilschein zurück erstattet.
-
-Gerne senden wir dir weitere Informationen zu deinem Gemüseabo zusammen mit deiner Rechnung für das Abonnement und deinen Anteilsschein mit einer separaten E-Mail. 
+Falls du trotzdem bereits Mitglied werden willst, z.B. um an der GV mitzuwirken oder bei Garten-Einsätzen mitzumachen, kannst du deinen Anteilschein wie im separaten Mail beschrieben einzahlen. Jedes Mitglied der Kooperative kauft mindestens einen Anteilschein. So kannst du bei unseren Entscheidungen mitbestimmen und wir können gemeinsam die Infrastruktur für den Gemüseanbau finanzieren. Bei einem Austritt aus dem Verein bekommst du deinen Anteil zurückerstattet.
+Du kannst auch damit warten, bis ein Abo-Platz frei wird, dann sind das separate E-Mail und untenstehende Informationen vorerst hinfällig. 
 
 --------------------------
 Deine Login-Informationen
 
+Falls du dich direkt als Mitglied anmeldest, kannst du dich bereits jetzt in unserem Online-Tool für Arbeitseinsätze eintragen:
 {% blocktrans %}Melde dich mit den untenstehenden Angaben im "Rande-Planer" (Mitgliederbereich der Randebandi) auf {{serverurl}} an. Dort findest du deine Abo-Übersicht und verwaltest deine Tätigkeitsbereiche, Einsätze und Personalien.
 
 Um dich einzuloggen, kannst du folgende Daten benutzen{% endblocktrans %}:
