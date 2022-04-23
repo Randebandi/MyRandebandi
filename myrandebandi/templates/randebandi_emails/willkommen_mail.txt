@@ -10,10 +10,9 @@
 {% vocabulary "member_type" as v_member_type %}
 {% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei {{ v_d_enriched_organisation }}.{% endblocktrans %}
 
-Im Moment haben wir die maximale Abo-Anzahl erreicht und können dir deshalb kein Abo ausstellen. Mit deiner Anmeldung bist du jedoch auf unserer Warteliste und kriegst von uns Bescheid, wenn es wieder freie Plätze gibt. Normalerweise können wir dir jeweils im Januar mitteilen, ob für die kommende Saison, die Anfang Mai startet, Plätze frei werden.
-
-Falls du trotzdem bereits Mitglied werden willst, z.B. um an der GV mitzuwirken oder bei Garten-Einsätzen mitzumachen, kannst du deinen Anteilschein wie im separaten Mail beschrieben einzahlen. Jedes Mitglied der Kooperative kauft mindestens einen Anteilschein. So kannst du bei unseren Entscheidungen mitbestimmen und wir können gemeinsam die Infrastruktur für den Gemüseanbau finanzieren. Bei einem Austritt aus dem Verein bekommst du deinen Anteil zurückerstattet.
-Du kannst auch damit warten, bis ein Abo-Platz frei wird, dann sind das separate E-Mail und untenstehende Informationen vorerst hinfällig. 
+Jedes Mitglied der Kooperative kauft mindestens einen Anteilschein. Somit bist du Miteigentümer_In des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen und wir können gemeinsam die Infrastruktur für den Gemüseanbau finanzieren. Bei einem Austritt aus der Genossenschaft bekommst du deinen Anteilschein zurück erstattet.
+		 
+Gerne senden wir dir weitere Informationen zu deinem Gemüseabo zusammen mit deiner Rechnung für das Abonnement und deinen Anteilsschein mit einer separaten E-Mail. 
 
 --------------------------
 Deine Login-Informationen
