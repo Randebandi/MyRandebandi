@@ -179,10 +179,10 @@ ORGANISATION_NAME_CONFIG = {"type" : "Gemüsebaukooperative",
     "gender" : "F"}
 ORGANISATION_LONG_NAME = "Gemüsebaukooperative Randebandi"
 ORGANISATION_ADDRESS = {"name":"Gemüsebaukooperative Randebandi", 
-            "street" : "Nisihof",
-            "number" : "",
-            "zip" : "6208",
-            "city" : "Oberkirch",
+            "street" : "Schachenstrasse",
+            "number" : "15a",
+            "zip" : "6010",
+            "city" : "Kriens",
             "extra" : ""}
 ORGANISATION_PHONE =''
 ORGANISATION_BANK_CONNECTION = {"PC" : "89-312727-9",
