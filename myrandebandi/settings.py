@@ -225,3 +225,6 @@ EMAILS = {
 
 FROM_FILTER = {'filter_expression': '.*@randebandi\.ch',
                'replacement_from': 'info@randebandi.ch'}
+
+DEFAULT_FROM_EMAIL = 'info@randebandi.ch'
+
