@@ -32,7 +32,6 @@ INSTALLED_APPS = [
     'crispy_forms',
     'myrandebandi',
     'adminsortable2',
-    'polymorphic'
 ]
 
 ROOT_URLCONF = 'myrandebandi.urls'
@@ -100,8 +99,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'impersonate.middleware.ImpersonateMiddleware',
-    'django.contrib.sites.middleware.CurrentSiteMiddleware'
+    'impersonate.middleware.ImpersonateMiddleware'
 ]
 
 EMAIL_HOST = os.environ.get('JUNTAGRICO_EMAIL_HOST')
@@ -112,7 +110,6 @@ EMAIL_USE_TLS = os.environ.get('JUNTAGRICO_EMAIL_TLS', 'False')=='True'
 EMAIL_USE_SSL = os.environ.get('JUNTAGRICO_EMAIL_SSL', 'False')=='True'
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 WHITELIST_EMAILS = []
 
@@ -195,10 +192,12 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "89-312727-9",
             "ESR" : "89-312727-9"}
 INFO_EMAIL = "info@randebandi.ch"
 SERVER_URL = "www.randebandi.ch"
+ADMINPORTAL_NAME = "Meine Randebandi"
+ADMINPORTAL_SERVER_URL = "meine.randebandi.ch"
 BUSINESS_REGULATIONS = "https://www.randebandi.ch/wp-content/uploads/2021/12/Randebandi-Betriebsreglement_2021.pdf"
 BYLAWS = "https://www.randebandi.ch/wp-content/uploads/2023/02/Randebandi-Statuten_Feb2023.pdf"
 MAIL_TEMPLATE = "mails/email.html"
-STYLES = {'static': ['/static/css/individual.css']
+STYLE_SHEET = "/static/css/individual.css"
 FAVICON = "/static/img/favicono.ico"
 FAQ_DOC = "https://www.randebandi.ch/gemueseabo/faq/"
 EXTRA_SUB_INFO = ""
@@ -228,4 +227,3 @@ FROM_FILTER = {'filter_expression': '.*@randebandi\.ch',
                'replacement_from': 'info@randebandi.ch'}
 
 DEFAULT_FROM_EMAIL = 'info@randebandi.ch'
-
