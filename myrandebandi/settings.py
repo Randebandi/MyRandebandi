@@ -32,7 +32,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'myrandebandi',
     'adminsortable2',
-    'polymorphic',
+    'polymorphic'
 ]
 
 ROOT_URLCONF = 'myrandebandi.urls'
@@ -101,7 +101,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'impersonate.middleware.ImpersonateMiddleware',
-    'django.contrib.sites.middleware.CurrentSiteMiddleware',
+    'django.contrib.sites.middleware.CurrentSiteMiddleware'
 ]
 
 EMAIL_HOST = os.environ.get('JUNTAGRICO_EMAIL_HOST')
