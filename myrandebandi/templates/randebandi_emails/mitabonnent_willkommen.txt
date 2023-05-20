@@ -45,9 +45,9 @@ Weitere Informationen
 Um deine Anmeldung abzuschliessen, trage dich bitte unter „Mitarbeit“ bei deinen bevorzugten Tätigkeitsbereichen ein (damit wir bei Umfragen wissen, wer wo mithelfen möchte).
 
 --------------------------------
-Mailverteiler
+Newsletter
 
-Etwa einmal pro Monat versenden wir vom Kernteam eine Infomail und das Gartenteam sendet jeweils zur Tasche ein Gartenmail. Um diese zu erhalten, trage dich bitte im diesem Formular ein: http://eepurl.com/huJfE1
+Etwa einmal pro Monat versenden wir vom Kernteam einen Newsletter. Um diese zu erhalten, trage dich bitte im diesem Formular ein: https://www.randebandi.ch/newsletter/
 
 
 {% if c_faq_doc.strip %}
