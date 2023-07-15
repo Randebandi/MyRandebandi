@@ -15,7 +15,7 @@
 {% blocktrans with sc=shares.count%}Du hast bei {{ v_d_enriched_organisation }} {{sc}} {{ v_share_pl }} bestellt{% endblocktrans %}:
 {% for share in shares %}{% blocktrans with sid=share.id %}{{ v_share }} mit Nummer: {{ sid }}{% endblocktrans %}
 {% endfor %}
-{% blocktrans with sc=shares.count%}Ein Anteilsschein ist {{ c_currency }} {{ c_share_price }} Wert. Du wirst bald in einem separaten eMail die zugehörige Rechnung erhalten. Sobald du den Betrag überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt ein Gemüse-Abo zu beziehen.{% endblocktrans %}
+{% blocktrans with sc=shares.count%}Ein Anteilsschein ist {{ c_currency }} {{ c_share_price }} Wert. Du wirst bald in einem separaten eMail die zugehörige Rechnung erhalten. Sobald du den Betrag überwiesen hast, bist Du offiziell Mitglied bei der Randebandi. Damit bist Du berechtigt einen Ernteanteil zu beziehen und aktiv das Vereinsleben mitzugestallten.{% endblocktrans %}
 
 
 {% blocktrans trimmed %}
