@@ -15,7 +15,7 @@
 {% blocktrans %}Soeben hat dich '{{name}}' als {{ v_co_member }} hinzugefügt.{% endblocktrans %}
 {% endif %}
 
-{% blocktrans %}Solltest du irrtumlicherweise hier eingetragen worden sein melde dies bitte an{{ c_info_email }}.
+{% blocktrans %}Solltest du irrtumlicherweise hier eingetragen worden sein melde dies bitte an {{ c_info_email }}.
 Anderenfalls gehen wir davon aus, dass dies seine Richtigkeit hat.{% endblocktrans %}
 
 Bis bald und liebe Grüsse
