@@ -1,5 +1,5 @@
 .juntagrico_logo {
-    background: url(myrandebandi/static/img/Logo_RB_Gruen.png) 0 0px;
+    background: url(/myrandebandi/static/img/Logo_RB_Gruen.png) 0 0px;
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
