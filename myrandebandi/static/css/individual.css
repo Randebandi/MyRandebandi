@@ -1,8 +1,8 @@
 .juntagrico_logo {
-    background: url(/static/img/logo_new.png) 0 0px;
+    background: url(/static/img/logo.png) 0 0px;
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 700px;
-    height: 687px;
+    width: 300px;
+    height: 300px;
 }
