@@ -196,8 +196,8 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "89-312727-9",
             "ESR" : "89-312727-9"}
 INFO_EMAIL = "info@randebandi.ch"
 SERVER_URL = "www.randebandi.ch"
-BUSINESS_REGULATIONS = "https://www.randebandi.ch/wp-content/uploads/2021/12/Randebandi-Betriebsreglement_2021.pdf"
-BYLAWS = "https://www.randebandi.ch/wp-content/uploads/2023/02/Randebandi-Statuten_Feb2023.pdf"
+BUSINESS_REGULATIONS = "https://www.randebandi.ch/wp-content/uploads/2023/08/Hofreglement_aktuell.pdf"
+BYLAWS = "https://www.randebandi.ch/wp-content/uploads/2023/08/Statuten_aktuell.pdf"
 MAIL_TEMPLATE = "mails/email.html"
 STYLES = {'static': ['css/individual.css']}
 FAVICON = "/static/img/favicono.ico"
