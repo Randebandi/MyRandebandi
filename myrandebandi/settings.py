@@ -179,10 +179,10 @@ VOCABULARY = {
     'depot_pl' : 'Depots'
 }
 ORGANISATION_NAME = "Randebandi"
-ORGANISATION_NAME_CONFIG = {"type" : "Gemüsebaukooperative",
+ORGANISATION_NAME_CONFIG = {"type" : "",
     "gender" : "F"}
-ORGANISATION_LONG_NAME = "Gemüsebaukooperative Randebandi"
-ORGANISATION_ADDRESS = {"name":"Gemüsebaukooperative Randebandi", 
+ORGANISATION_LONG_NAME = "Randebandi"
+ORGANISATION_ADDRESS = {"name":"Verein Randebandi", 
             "street" : "Schachenstrasse",
             "number" : "15a",
             "zip" : "6010",
