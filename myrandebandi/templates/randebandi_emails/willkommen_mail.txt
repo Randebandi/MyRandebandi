@@ -10,7 +10,7 @@
 {% vocabulary "member_type" as v_member_type %}
 {% blocktrans %}Vielen herzlichen Dank für Deine Anmeldung zur Mitgliedschaft bei {{ v_d_enriched_organisation }}.{% endblocktrans %}
 
-Jedes Mitglied der Kooperative kauft mindestens einen Anteilschein. Somit bist du Miteigentümer*in des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen und wir können gemeinsam die Infrastruktur für den Gemüseanbau finanzieren. Bei einem Austritt aus dem Verein bekommst du deinen Anteilschein zurück erstattet.
+Jedes Mitglied der Randebandi kauft mindestens einen Anteilschein. Somit bist du Miteigentümer:in des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen und wir können gemeinsam die Infrastruktur für den Gemüseanbau finanzieren. Bei einem Austritt aus dem Verein bekommst du deinen Anteilschein zurück erstattet.
 		 
 Gerne senden wir dir weitere Informationen zusammen mit deiner Rechnung für den Anteilsschein mit einer separaten E-Mail. 
 
