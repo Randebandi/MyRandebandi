@@ -4,4 +4,5 @@
 {% endspaceless %}
 ============
 weitere Infos: http://{% config "server_url" %}
-Facebook: Randebandi - Gemüsebaukooperative
+Facebook: Randebandi
+Insta: www.instagram.com/randebandi/
