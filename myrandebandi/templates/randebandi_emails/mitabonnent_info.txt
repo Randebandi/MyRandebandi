@@ -10,7 +10,7 @@
 {% trans "Hallo" %}
 
 {% if c_enable_shares %}
-{% blocktrans %}Soeben hat dich '{{pm}}' als {{ v_co_member }} hinzugefügt und für dich {{ shares }} {{ v_share_pl }} bestellt.{% endblocktrans %}
+{% blocktrans with pm=sub.primary_member %}Soeben hat dich '{{pm}}' als {{ v_co_member }} hinzugefügt und für dich {{ new_shares }} {{ v_share_pl }} bestellt.{% endblocktrans %}
 {% else %}
 {% blocktrans %}Soeben hat dich '{{pm}}' als {{ v_co_member }} hinzugefügt.{% endblocktrans %}
 {% endif %}
