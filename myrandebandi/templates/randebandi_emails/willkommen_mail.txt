@@ -34,9 +34,6 @@ Informationen zum Rande-Planer
 Um deine Anmeldung abzuschliessen, trage dich bitte unter „Mitarbeit“ bei deinen bevorzugten Tätigkeitsbereichen ein (damit wir bei Umfragen wissen, wer wo mithelfen möchte).
 
 --------------------------------
-Newsletter
-
-Etwa einmal pro Monat versenden wir vom Kernteam einen Newsletter. Um diese zu erhalten, trage dich bitte im diesem Formular ein: https://www.randebandi.ch/newsletter/
 
 {% if c_faq_doc.strip %}
 {% blocktrans with fd=c_faq_doc|safe %}Bei weiteren Fragen kannst du gerne die FAQ-Seite ({{ fd }}) besuchen oder du schreibst uns eine Mail an {{ c_info_email }}.
