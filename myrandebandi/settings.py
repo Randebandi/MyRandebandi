@@ -203,6 +203,9 @@ STYLES = {'static': ['css/individual.css']}
 FAVICON = "/static/img/favicono.ico"
 FAQ_DOC = "https://www.randebandi.ch/gemueseabo/faq/"
 EXTRA_SUB_INFO = ""
+SUB_OVERVIEW_FORMAT = {'delimiter': '|',
+ 'format': '{product} - {type}'
+}
 ACTIVITY_AREA_INFO = ""
 SHARE_PRICE = "475"
 ENABLE_SHARES = True
