@@ -16,7 +16,7 @@
                 {% trans "Info" %}:
                 {% blocktrans trimmed with sd=start_date|date:"d.m.Y" %}
                 Aktuell hat es noch Platz und es ist möglich, einen {{ v_subscription }} abzuschliessen. 
-                Gib unten dein gewünschtes Startdatum ein. Das Datum deiner 1. Tasche wird dir in einem E-Mail kommuniziert. 
+                Gib unten dein gewünschtes Startdatum ein. 
                 {% endblocktrans %}
             </div>
         </div>
@@ -30,8 +30,7 @@
                     <label>
                         {{ subscriptionform.start_date }}
                         {% blocktrans trimmed %}
-                        Gilt nur insofern 1 {{ v_subscription }}
-                        zum gewünschten Datum frei ist.
+                       Das Datum deiner 1. Tasche wird dir in einem E-Mail kommuniziert.
                         {% endblocktrans %}
                     </label>
                     {% if subscriptionform.start_date.errors %}
