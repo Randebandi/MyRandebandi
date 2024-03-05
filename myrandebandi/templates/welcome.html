@@ -13,8 +13,9 @@
         {% blocktrans %}Du bist jetzt {{ v_member_type }} bei {{ v_d_enriched_organisation }}.{% endblocktrans %}
         {% if not no_subscription %}
             {% blocktrans %}Du wurdest als {{ v_subscription }}-BezieherIn zur Warteliste hinzugefügt. Wir werden dir sobald 
-            wie möglich mitteilen, wann du deine 1. Tasche abholen kannst.{% endblocktrans %}
+            wie möglich mitteilen, wann du deine 1. Tasche abholen kannst. Bekommst du innrhalb einer Woche kein persönliches
+            Email, melde dich bitte via <a href="mailto:info@randebandi.ch">info@randebandi.ch</a>.{% endblocktrans %}
         {% endif %}
-        {% trans "Du erhälst eine Email mit allen weiteren Infos an die von dir angegebene Emailadresse ( unsere Mails verirren sich manchmal in den SPAM Ordner )." %}
+        {% trans "Du erhälst eine automatische Email mit allen weiteren Infos an die von dir angegebene Emailadresse ( unsere Mails verirren sich manchmal in den SPAM Ordner )." %}
     </div>
 {% endblock %}
