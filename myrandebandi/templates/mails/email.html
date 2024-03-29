@@ -1,34 +1,30 @@
 {% load juntagrico.config %}
 <style type="text/css">
-    @media screen
-    {@font-face {font-family: 'Source Sans Pro Light';src: url('http://{% config "server_url" %}/static/juntagrico/fonts/SourceSansPro-Light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
-    @font-face
-    {font-family: 'Source Sans Pro Regular';src: url('http://{% config "server_url" %}/static/juntagrico/fonts/SourceSansPro-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
+    @media screen {
+        @font-face {
+            font-family: 'Source Sans Pro Light';
+            src: url('http://{% config "server_url" %}/static/juntagrico/fonts/SourceSansPro-Light.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Source Sans Pro Regular';
+            src: url('http://{% config "server_url" %}/static/juntagrico/fonts/SourceSansPro-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
     }
 </style>
 <table width="600px">
     <tr>
-        <td rowspan="2" class="border_y" width="20" style="padding:0; margin:0; font-size:12px; height:20px;">
-            &nbsp;
-        </td>
-        <td rowspan="2" class="border_y" width="20" style="padding:0; margin:0; font-size:12px; height:20px;">
-            &nbsp;
+        <td colspan="3" style="text-align: center;">
+            <img src="https://www.randebandi.ch/wp-content/uploads/2023/07/cropped-Logo_RB_schwarz_fuer-Webseite.png" alt="Randebandi Logo" style="max-width: 100%;">
         </td>
     </tr>
     <tr>
-        <td style="font-size:14px;font-family: Arial, sans-serif; padding:20px; */word-break: break-all;">
+        <td colspan="3" style="padding-top:25px; font-size:14px; font-family: 'Source Sans Pro Light', monospace; text-align: left;">
             {% block content %}
             {% endblock %}
-        </td>
-    </tr>
-    <tr>
-        <td colspan="3" style="padding-top:25px;">
             <a href="http://{% config "server_url" %}">
                 {% config "server_url" %}
             </a>
