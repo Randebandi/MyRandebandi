@@ -27,7 +27,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'juntagrico_godparent',
     'juntagrico',
     'impersonate',
     'crispy_forms',
