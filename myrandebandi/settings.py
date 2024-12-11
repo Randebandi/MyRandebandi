@@ -27,10 +27,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'myrandebandi',
     'juntagrico',
+    'fontawesomefree',
+    'import_export',
     'impersonate',
     'crispy_forms',
-    'myrandebandi',
     'adminsortable2',
     'polymorphic',
 ]
@@ -114,7 +116,14 @@ EMAIL_USE_SSL = os.environ.get('JUNTAGRICO_EMAIL_SSL', 'False')=='True'
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.ManifestStaticFilesStorage",
+    },
+}
 
 WHITELIST_EMAILS = []
 
@@ -138,8 +147,9 @@ IMPERSONATE = {
     'REDIRECT_URL': '/my/profile',
 }
 
-LOGIN_REDIRECT_URL = "/my/jobs"
+LOGIN_REDIRECT_URL = "/"
 
+IMPORT_EXPORT_EXPORT_PERMISSION_CODE = 'view'
 
 """
     Admin Settings
@@ -195,8 +205,13 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "89-312727-9",
             "BIC" : "9000",
             "NAME" : "PostFinance AG",
             "ESR" : "89-312727-9"}
-INFO_EMAIL = "info@randebandi.ch"
-SERVER_URL = "www.randebandi.ch"
+CONTACTS = {
+    "general": "info@randebandi.ch"
+}
+ORGANISATION_WEBSITE = {
+    'name': "www.randebandi.ch",
+    'url': "https://www.randebandi.ch"
+}
 BUSINESS_REGULATIONS = "https://www.randebandi.ch/wp-content/uploads/2023/09/RaBa_Betriebsreglement_Aug2023.pdf"
 BYLAWS = "https://www.randebandi.ch/wp-content/uploads/2023/08/Statuten_aktuell.pdf"
 MAIL_TEMPLATE = "mails/email.html"
