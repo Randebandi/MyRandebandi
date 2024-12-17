@@ -3,6 +3,6 @@
 {% block content %}{% endblock %}
 {% endspaceless %}
 ============
-weitere Infos: http://{% config "server_url" %}
+weitere Infos: {% organisation_website "url" %}
 Facebook: Randebandi
 Insta: www.instagram.com/randebandi/

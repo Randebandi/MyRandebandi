@@ -18,8 +18,8 @@
         <td colspan="3" style="padding-top:25px; font-size:14px; font-family: Arial, sans-serif; text-align: left;">
             {% block content %}
             {% endblock %}
-            <a href="http://{% config "server_url" %}">
-                {% config "server_url" %}
+            <a href="http://{% organisation_website "url" %}">
+                {% organisation_website "name" %}
             </a>
         </td>
     </tr>
