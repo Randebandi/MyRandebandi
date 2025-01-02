@@ -207,7 +207,6 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "89-312727-9",
             "ESR" : "89-312727-9"}
 CONTACTS = {
     "general": "info@randebandi.ch"
-    "for_subscription": "garten@randebandi.ch"
 }
 ORGANISATION_WEBSITE = {
     'name': "www.randebandi.ch",
