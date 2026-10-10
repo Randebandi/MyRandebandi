@@ -8,14 +8,6 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Staging
-if os.environ.get('JUNTAGRICO_STAGING') == '1':
-    # staging URL erlauben
-    ALLOWED_HOSTS.append('myrandebandi-staging.juntagrico.science')
-    # E-Mails Deaktivieren
-    EMAIL_BACKEND = "django.core.mail.backends.dummy.EmailBackend"
-
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('JUNTAGRICO_SECRET_KEY')
 
@@ -256,3 +248,10 @@ FROM_FILTER = {'filter_expression': '.*@randebandi\.ch',
                'replacement_from': 'info@randebandi.ch'}
 
 DEFAULT_FROM_EMAIL = 'info@randebandi.ch'
+
+# Staging
+if os.environ.get('JUNTAGRICO_STAGING') == '1':
+    # staging URL erlauben
+    ALLOWED_HOSTS.append('myrandebandi-staging.juntagrico.science')
+    # E-Mails Deaktivieren
+    EMAIL_BACKEND = "django.core.mail.backends.dummy.EmailBackend"
