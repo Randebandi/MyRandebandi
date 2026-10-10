@@ -3,6 +3,7 @@ Django settings for myrandebandi project.
 """
 
 import os
+from juntagrico import defaults
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -28,12 +29,14 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'myrandebandi',
     'juntagrico',
-    'fontawesomefree',
     'import_export',
     'impersonate',
     'crispy_forms',
     'adminsortable2',
     'polymorphic',
+    'crispy_bootstrap4',
+    'django_select2',
+    'djrichtextfield',
 ]
 
 ROOT_URLCONF = 'myrandebandi.urls'
@@ -63,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.request',
+                'juntagrico.context_processors.vocabulary',
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
@@ -77,6 +81,10 @@ WSGI_APPLICATION = 'myrandebandi.wsgi.application'
 
 
 LANGUAGE_CODE = 'de'
+
+
+DJRICHTEXTFIELD_CONFIG = defaults.richtextfield_config(LANGUAGE_CODE)
+
 
 SITE_ID = 1
 
@@ -112,8 +120,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('JUNTAGRICO_EMAIL_PASSWORD')
 EMAIL_PORT = int(os.environ.get('JUNTAGRICO_EMAIL_PORT', '25' ))
 EMAIL_USE_TLS = os.environ.get('JUNTAGRICO_EMAIL_TLS', 'False')=='True'
 EMAIL_USE_SSL = os.environ.get('JUNTAGRICO_EMAIL_SSL', 'False')=='True'
-
-SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+EMAIL_BACKEND='juntagrico.backends.email.EmailBackend'
 
 STORAGES = {
     "default": {
@@ -186,7 +193,7 @@ VOCABULARY = {
     'member_type' : 'Mitglied',
     'member_type_pl' : 'Mitglieder',
     'depot' : 'Depot',
-    'depot_pl' : 'Depots'
+    'depot_pl' : 'Depots',
 }
 ORGANISATION_NAME = "Randebandi"
 ORGANISATION_NAME_CONFIG = {"type" : "",
@@ -213,13 +220,13 @@ ORGANISATION_WEBSITE = {
 }
 BUSINESS_REGULATIONS = "https://www.randebandi.ch/wp-content/uploads/2023/09/RaBa_Betriebsreglement_Aug2023.pdf"
 BYLAWS = "https://www.randebandi.ch/wp-content/uploads/2023/08/Statuten_aktuell.pdf"
-MAIL_TEMPLATE = "mails/email.html"
 STYLES = {'static': ['css/individual.css']}
 FAVICON = "/static/img/favicono.ico"
 FAQ_DOC = "https://www.randebandi.ch/gemueseabo/faq/"
 EXTRA_SUB_INFO = ""
-SUB_OVERVIEW_FORMAT = {'delimiter': '|',
- 'format': '{product} - {type}'
+SUB_OVERVIEW_FORMAT = {
+    'delimiter': '|',
+    # 'format': '{product} - {type}'
 }
 ACTIVITY_AREA_INFO = ""
 SHARE_PRICE = "475"
@@ -227,8 +234,10 @@ ENABLE_SHARES = True
 BASE_FEE = ""
 CURRENCY = "CHF"
 ASSIGNMENT_UNIT = "ENTITY"
-PROMOTED_JOB_TYPES = []
-PROMOTED_JOBS_AMOUNT = 2
+JOBS_FRONTPAGE = {
+    'promoted_types': [...],
+    'promoted_count': 2
+}
 DEPOT_LIST_GENERATION_DAYS = [1,2,3,4,5,6,7]	
 BILLING = False
 BUSINESS_YEAR_START = {"day":1, "month":1}
