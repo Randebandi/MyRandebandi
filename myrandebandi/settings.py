@@ -11,7 +11,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Staging
 if os.environ.get('JUNTAGRICO_STAGING') == '1':
     # staging URL erlauben
-    ALLOWED_HOSTS.append('randebandi-staging.juntagrico.science')
+    ALLOWED_HOSTS.append('myrandebandi-staging.juntagrico.science')
     # E-Mails Deaktivieren
     EMAIL_BACKEND = "django.core.mail.backends.dummy.EmailBackend"
 
