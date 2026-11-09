@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'myrandebandi',
+    'juntagrico_webdav',
     'juntagrico',
     'import_export',
     'impersonate',
@@ -40,6 +41,14 @@ INSTALLED_APPS = [
 ]
 
 ROOT_URLCONF = 'myrandebandi.urls'
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'juntagrico_app_cache_table',
+        'TIMEOUT': None,
+    }
+}
 
 DATABASES = {
     'default': {
